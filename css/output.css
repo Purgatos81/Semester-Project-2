@@ -36,7 +36,50 @@
 
 body {
   margin: 0;
-  padding-top: 0;
+  background-color: #BDBDBD;
+  font-size: 100%;
+}
+
+.hero-div {
+  background-color: #191919;
+  position: relative;
+}
+
+.hero-img {
+  max-width: 100%;
+}
+
+.hero-text-placement-container {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-header {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.9em;
+}
+
+.cta-button {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  background-color: #3F3F3F;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.hero-bottom-edge-container {
+  background-color: #191919;
+  padding-bottom: 100px;
+  margin: 0;
+}
+
+.main-featured-h2 {
+  font-family: "Ubuntu", sans-serif;
 }
 
 /*# sourceMappingURL=output.css.map */

@@ -1,8 +1,53 @@
+@use 'variables';
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    padding-top: 0;
+    background-color: variables.$secondary-color;
+    font-size: 100%;
+}
+
+.hero-div {
+    background-color: variables.$primary-color;
+    position: relative;
+}
+
+.hero-img {
+    max-width: 100%;
+}
+
+.hero-text-placement-container {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-header {
+    font-family: variables.$primary-font;
+    font-size: 1.9em;
+}
+
+.cta-button {
+    text-decoration: none;
+    font-family: variables.$seconday-font;
+    background-color: variables.$tertiary-color;
+    color: variables.$text-color-light;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.hero-bottom-edge-container {
+    background-color: variables.$primary-color;
+    padding-bottom: 100px;
+    margin: 0;
+}
+
+.main-featured-h2 {
+    font-family: variables.$primary-font;
 }
