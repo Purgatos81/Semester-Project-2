@@ -83,8 +83,8 @@ body {
 }
 
 .loader {
-  border: 5px solid orange;
-  border-top: 5px solid grey;
+  border: 5px solid #191919;
+  border-top: 5px solid whitesmoke;
   border-radius: 50%;
   width: 40px;
   height: 40px;
