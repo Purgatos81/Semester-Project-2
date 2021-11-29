@@ -7,6 +7,10 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
+if (!id) {
+    document.location.href = "/";
+}
+
 const productUrl = baseUrl +"products/" + id;
 
 console.log(productUrl);
