@@ -20,7 +20,7 @@ console.log(productUrl);
         const response = await fetch(productUrl);
         const details = await response.json();
 
-        document.title = details.name;
+        document.title = details.title;
 
         const container = document.querySelector(".detail-container");
 
