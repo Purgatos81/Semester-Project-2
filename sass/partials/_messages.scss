@@ -1,0 +1,24 @@
+.message {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid black;
+    color: black;
+}
+
+.message.error {
+    border-color: red;
+    color: white;
+    background: red;
+}
+
+.message.warning {
+    border-color: orange;
+    color: white;
+    background: orange;
+}
+
+.message.success {
+    border-color: green;
+    color: white;
+    background: green;
+}
