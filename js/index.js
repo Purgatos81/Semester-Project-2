@@ -15,11 +15,13 @@ console.log(productsUrl);
         container.innerHTML = "";
 
         json.forEach(function (product) {
+            if (product.featured === true) {
             container.innerHTML += `<a class="featured-product" href="details.html?id=${product.id}">
                                         <img src="${product.image.url}">
                                         <h4>${product.title}</h4>
                                         <p>Price: ${product.price}</p>
                                     </a>`;
+            }       
         });
 
         console.log(json);
