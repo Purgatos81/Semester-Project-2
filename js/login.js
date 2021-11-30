@@ -1,6 +1,9 @@
 import { baseUrl } from "./settings/api.js";
 import { saveToken, saveUser } from "./utils/storage.js";
 import displayMessage from "./components/common/displayMessage.js";
+import createLogin from "./components/common/createNav.js";
+
+createLogin();
 
 const form = document.querySelector("form");
 const username = document.querySelector("#username");

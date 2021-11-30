@@ -1,5 +1,8 @@
 import { baseUrl } from "./settings/api.js";
 import displayMessage from "./components/common/displayMessage.js";
+import createLogin from "./components/common/createNav.js";
+
+createLogin();
 
 const queryString = document.location.search;
 
