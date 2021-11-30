@@ -19,7 +19,7 @@ console.log(productsUrl);
 
         json.forEach(function (product) {
             container.innerHTML += `<a class="product-card" href="details.html?id=${product.id}">
-                                        <img src="${product.image.url}">
+                                        <img src="${product.image}">
                                         <h4>${product.title}</h4>
                                         <p>Price: ${product.price}</p>
                                     </a>`;
