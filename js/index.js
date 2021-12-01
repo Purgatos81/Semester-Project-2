@@ -1,12 +1,15 @@
 import { baseUrl } from "./settings/api.js";
 import displayMessage from "./components/common/displayMessage.js";
 import createLogin from "./components/common/createNav.js";
+import { imgBasicUrl } from "./settings/api.js";
 
 const productsUrl = baseUrl + "products";
+
 
 createLogin();
 
 console.log(productsUrl);
+
 
 (async function () {
     const container = document.querySelector(".featured-container");
@@ -18,11 +21,15 @@ console.log(productsUrl);
 
         container.innerHTML = "";
 
+      
+
         products.forEach(function (product) {
             if (product.featured === true) {
-                console.log(product.image_url);
+                console.log(product);
+                console.log(product.image);
+
             container.innerHTML += `<a class="featured-product" href="details.html?id=${product.id}">
-                                        <img src=${product.image.url}/>
+                                        <img src="${imgBasicUrl + product.image_url}">
                                         <h4>${product.title}</h4>
                                         <p>Price: ${product.price}</p>
                                     </a>`;

@@ -1,6 +1,7 @@
 import { baseUrl } from "./settings/api.js";
 import displayMessage from "./components/common/displayMessage.js";
 import createLogin from "./components/common/createNav.js";
+import { imgBasicUrl } from "./settings/api.js";
 
 const productsUrl = baseUrl + "products";
 
@@ -19,7 +20,7 @@ console.log(productsUrl);
 
         json.forEach(function (product) {
             container.innerHTML += `<a class="product-card" href="details.html?id=${product.id}">
-                                        <img src="${product.image}">
+                                        <img src="${imgBasicUrl + product.image_url}">
                                         <h4>${product.title}</h4>
                                         <p>Price: ${product.price}</p>
                                     </a>`;
