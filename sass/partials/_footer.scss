@@ -1,0 +1,13 @@
+@use 'variables';
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: variables.$primary-color;
+    padding-top: 20px;
+}
+
+.footer-p {
+    color: variables.$text-color-light;
+}

@@ -29,9 +29,9 @@ console.log(productsUrl);
                 console.log(product.image);
 
             container.innerHTML += `<a class="featured-product" href="details.html?id=${product.id}">
-                                        <img src="${imgBasicUrl + product.image_url}">
-                                        <h4>${product.title}</h4>
-                                        <p>Price: ${product.price}</p>
+                                        <img class="featured-img" src="${imgBasicUrl + product.image_url}">
+                                        <h4 class="featured-h4">${product.title}</h4>
+                                        <p class="featured-p">$ ${product.price}</p>
                                     </a>`;
             }       
         });

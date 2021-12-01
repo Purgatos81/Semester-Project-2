@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     margin: 0;
     background-color: variables.$secondary-color;
@@ -50,5 +54,36 @@ body {
 
 .main-featured-h2 {
     font-family: variables.$primary-font;
+    padding: 50px 0 20px 10%;
 }
 
+.featured-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10% 60px 10%;
+}
+
+.featured-product {
+    width: 17%;
+    background-color: variables.$tertiary-color;
+}
+
+.featured-img {
+    max-width: 100%;
+}
+
+.featured-h4, .featured-p {
+    text-align: center;
+    color: variables.$text-color-light;
+    font-family: variables.$seconday-font;
+    margin: 0;
+}
+
+.featured-h4 {
+    padding: 10px 0 5px 0;
+}
+
+.featured-p {
+    padding: 5px 0 10px 0;
+    font-size: small;
+}
