@@ -33,7 +33,7 @@ console.log(productUrl);
                                 <img class="details-img" src="${imgBasicUrl + details.image_url}">
                                 <p class="details-price-p">$ ${details.price}</p>
                                 <div class="cart-button-container">
-                                <i class="fas fa-cart-plus"></i>
+                                <i class="fas fa-cart-plus" data-id="${details.id}" data-title="${details.title}" data-link="" data-price="${details.price}"></i>
                                 </div>`;
 
                                 const addButton = document.querySelectorAll(".cart-button-container i");
@@ -44,8 +44,8 @@ console.log(productUrl);
                                 
                                 function handleClick() {
                                     console.log(event);
-                                    event.target.classList.toggle("fa-trash-alt");
-                                    event.target.classList.toggle("fa-cart-plus");
+                                    this.classList.toggle("fa-trash-alt");
+                                    this.classList.toggle("fa-cart-plus");
                                 }
         console.log(details);
     } catch (error) {
