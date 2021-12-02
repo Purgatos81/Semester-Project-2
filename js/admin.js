@@ -2,8 +2,10 @@ import createLogin from "./components/common/createNav.js";
 import displayMessage from "./components/common/displayMessage.js";
 import { baseUrl } from "./settings/api.js";
 import { getToken } from "./utils/storage.js";
+import logoutButton from "./components/common/logoutButton.js";
 
 createLogin();
+logoutButton();
 
 const form = document.querySelector("form");
 const title = document.querySelector("#title");
