@@ -2,6 +2,7 @@ import { baseUrl } from "./settings/api.js";
 import displayMessage from "./components/common/displayMessage.js";
 import createLogin from "./components/common/createNav.js";
 import { getToken } from "./utils/storage.js";
+import deleteButton from "./components/products/deleteButton.js";
 
 createLogin();
 
@@ -32,6 +33,8 @@ const loading = document.querySelector(".loader");
         price.value = details.price;
         description.value = details.description;
         idInput.value = details.id;
+
+        deleteButton(details.id);
 
         console.log(details);
     } catch (error) {
