@@ -12,6 +12,8 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
+const addedCartItems = getStoredProducts();
+
 if (!id) {
     document.location.href = "/";
 }
@@ -24,6 +26,17 @@ console.log(productUrl);
     try {
         const response = await fetch(productUrl);
         const details = await response.json();
+        let cssClass = "fa-cart-plus";
+        //check for existing items in array to set i fav class
+        const doesCartItemExist = addedCartItems.find(function (added) {
+            console.log(added);
+
+            return parseInt(added.id) === details.id;
+        });
+
+        if(doesCartItemExist) {
+            cssClass = "fa-trash-alt";
+        }
 
         document.title = details.title;
 
@@ -34,7 +47,7 @@ console.log(productUrl);
                                 <img class="details-img" src="${imgBasicUrl + details.image_url}">
                                 <p class="details-price-p">$ ${details.price}</p>
                                 <div class="cart-button-container">
-                                <i class="fas fa-cart-plus" data-id="${details.id}" data-title="${details.title}" data-link="" data-price="${details.price}"></i>
+                                <i class="fas ${cssClass}" data-id="${details.id}" data-title="${details.title}" data-link="" data-price="${details.price}"></i>
                                 </div>`;
 
                                 const addButton = document.querySelectorAll(".cart-button-container i");
