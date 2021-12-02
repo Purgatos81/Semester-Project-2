@@ -1,6 +1,7 @@
 import { baseUrl } from "./settings/api.js";
 import displayMessage from "./components/common/displayMessage.js";
 import createLogin from "./components/common/createNav.js";
+import { getStoredProducts } from "./utils/addFuntions.js";
 import { imgBasicUrl } from "./settings/api.js";
 
 createLogin();
@@ -43,10 +44,37 @@ console.log(productUrl);
                                 })
                                 
                                 function handleClick() {
-                                    console.log(event);
+
                                     this.classList.toggle("fa-trash-alt");
                                     this.classList.toggle("fa-cart-plus");
+
+                                    const id = this.dataset.id;
+                                    const title = this.dataset.title;
+                                    const price = this.dataset.price;
+
+                                    const currentStoredProds = getStoredProducts();
+
+                                    const cartItemExists = currentStoredProds.find(function(added) {
+                                        return added.id === id;
+                                    });
+
+                                    if(cartItemExists === undefined) {
+                                        const cartItem = { id: id, title: title, price: price};
+                                        currentStoredProds.push(cartItem);
+                                        saveProds(currentStoredProds);
+                                    }
+                                    else {
+                                        const newAdds = currentStoredProds.filter(adds => adds.id !== id);
+                                        saveProds(newAdds);
+                                    }
                                 }
+
+
+
+                                function saveProds(prods) {
+                                    localStorage.setItem("cart", JSON.stringify(prods));
+                                }
+
         console.log(details);
     } catch (error) {
         displayMessage("error", error, ".detail-container");
