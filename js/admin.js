@@ -4,6 +4,12 @@ import { baseUrl } from "./settings/api.js";
 import { getToken } from "./utils/storage.js";
 import logoutButton from "./components/common/logoutButton.js";
 
+const token = getToken();
+
+if (!token) {
+    location.href = "index.html";
+}
+
 createLogin();
 logoutButton();
 
@@ -37,8 +43,6 @@ async function addProduct(title, price, description) {
     const url = baseUrl + "products";
 
     const data = JSON.stringify({ title: title, price: price, description: description });
-
-    const token = getToken();
 
     const options = {
         method: "POST",

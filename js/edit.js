@@ -4,6 +4,12 @@ import createLogin from "./components/common/createNav.js";
 import { getToken } from "./utils/storage.js";
 import deleteButton from "./components/products/deleteButton.js";
 
+const token = getToken();
+
+if (!token) {
+    location.href = "index.html";
+}
+
 createLogin();
 
 const queryString = document.location.search;
@@ -68,7 +74,6 @@ async function updateProduct(title, price, description, id) {
     const url = baseUrl + "products/" + id;
     const data = JSON.stringify({ title: title, price: price, description: description });
 
-    const token = getToken();
 
     const options = {
         method: "PUT",
