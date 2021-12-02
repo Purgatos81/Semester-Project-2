@@ -54,7 +54,7 @@ function submitForm(event) {
     const descriptionValue = description.value.trim();
     const idValue = idInput.value;
 
-    if (nameValue.length === 0 || priceValue.length === 0 || isNaN(priceValue) || descriptionValue.length === 0) {
+    if (titleValue.length === 0 || priceValue.length === 0 || isNaN(priceValue) || descriptionValue.length === 0) {
         return displayMessage("warning", "Please supply proper values", ".message-container");
     }
 
