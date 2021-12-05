@@ -177,16 +177,43 @@ a {
   font-size: small;
 }
 
-.details-h2 {
-  color: blue;
+.main-detail-h1 {
+  margin-left: 20%;
+}
+
+.detail-container {
+  display: flex;
+  margin: 0 20%;
 }
 
 .details-img {
-  max-width: 20%;
+  max-width: 30%;
+}
+
+.details-text-container {
+  background-color: #3F3F3F;
+  display: grid;
+}
+
+.details-h2 {
+  color: #ffffff;
+}
+
+.details-p {
+  color: #ffffff;
+}
+
+.details-price-p {
+  color: #ffffff;
 }
 
 .cart-button-container i:hover {
   cursor: pointer;
+}
+
+.fas {
+  color: #ffffff;
+  font-size: 2rem;
 }
 
 /* temp code storage*/

@@ -1,17 +1,43 @@
 @use 'variables';
 
-.details-h2 {
-    color: blue;
+.main-detail-h1 {
+    margin-left: 20%;
+}
+
+.detail-container {
+    display: flex;
+    margin: 0 20%;
 }
 
 .details-img {
-    max-width: 20%;
+    max-width: 30%;
+}
+
+.details-text-container {
+    background-color: variables.$tertiary-color;
+    display: grid;
+}
+
+.details-h2 {
+    color: variables.$text-color-light;
+}
+
+.details-p {
+    color: variables.$text-color-light;
+}
+
+.details-price-p {
+    color: variables.$text-color-light;
 }
 
 .cart-button-container i:hover {
     cursor: pointer;
 }
 
+.fas {
+    color: variables.$text-color-light;
+    font-size: 2rem;    
+}
 /* temp code storage*/
 
 /*<i class="fas fa-trash-alt"></i>*/

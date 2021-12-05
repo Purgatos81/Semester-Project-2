@@ -42,12 +42,14 @@ console.log(productUrl);
 
         const container = document.querySelector(".detail-container");
 
-        container.innerHTML = `<h2 class="details-h2">${details.title}</h1>
+        container.innerHTML = `<img class="details-img" src="${imgBasicUrl + details.image_url}">
+                                <div class="details-text-container">
+                                <h2 class="details-h2">${details.title}</h1>
                                 <p class="details-p">${details.description}</p>
-                                <img class="details-img" src="${imgBasicUrl + details.image_url}">
                                 <p class="details-price-p">$ ${details.price}</p>
                                 <div class="cart-button-container">
                                 <i class="fas ${cssClass}" data-id="${details.id}" data-title="${details.title}" data-link="" data-price="${details.price}"></i>
+                                </div>
                                 </div>`;
 
                                 const addButton = document.querySelectorAll(".cart-button-container i");
