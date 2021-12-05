@@ -28,11 +28,12 @@ console.log(productsUrl);
                                         <p class="featured-p">$ ${product.price}</p>
                                         </a>`;
             } else {
-                container.innerHTML += `<a class="product-card" href="details.html?id=${product.id}">
-                                        <img src="${imgBasicUrl + product.image_url}">
-                                        <h4>${product.title}</h4>
-                                        <p>Price: ${product.price}</p>
-                                    </a>`;
+                container.innerHTML += `<div class="product-card-container">
+                                        <a class="product-card" href="details.html?id=${product.id}">
+                                        <img class="product-img" src="${imgBasicUrl + product.image_url}">
+                                        <h4 class="product-h4" >${product.title}</h4>
+                                        <p class="product-p" >Price: ${product.price}</p>
+                                        </a></div>`;
             }                        
         });
 
