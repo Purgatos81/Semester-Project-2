@@ -179,6 +179,7 @@ a {
 
 .main-detail-h1 {
   margin-left: 20%;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .detail-container {
@@ -193,18 +194,28 @@ a {
 .details-text-container {
   background-color: #3F3F3F;
   display: grid;
+  padding: 0 30px;
 }
 
 .details-h2 {
   color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  padding-top: 20px;
 }
 
 .details-p {
   color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+.price-button-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .details-price-p {
   color: #ffffff;
+  font-family: "Roboto", sans-serif;
 }
 
 .cart-button-container i:hover {

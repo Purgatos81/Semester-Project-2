@@ -2,6 +2,7 @@
 
 .main-detail-h1 {
     margin-left: 20%;
+    font-family: variables.$primary-font;
 }
 
 .detail-container {
@@ -16,18 +17,28 @@
 .details-text-container {
     background-color: variables.$tertiary-color;
     display: grid;
+    padding: 0 30px;
 }
 
 .details-h2 {
     color: variables.$text-color-light;
+    font-family: variables.$seconday-font;
+    padding-top: 20px;
 }
 
 .details-p {
     color: variables.$text-color-light;
+    font-family: variables.$seconday-font;
+}
+
+.price-button-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .details-price-p {
     color: variables.$text-color-light;
+    font-family: variables.$seconday-font;
 }
 
 .cart-button-container i:hover {
