@@ -232,6 +232,26 @@ a {
 
 /* temp code storage*/
 /*<i class="fas fa-trash-alt"></i>*/
+.cart-h1 {
+  margin-left: 20%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.cart-container {
+  display: flex;
+  margin: 0 20%;
+  flex-direction: column;
+}
+
+.cart-item-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.cart-img {
+  max-width: 20%;
+}
+
 .loader {
   border: 5px solid #191919;
   border-top: 5px solid whitesmoke;

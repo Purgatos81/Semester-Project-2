@@ -13,11 +13,11 @@ if (addedCartItems.length === 0) {
 }
 
 addedCartItems.forEach((cartItem) => {
-    cartContainer.innerHTML += `<div class="cart-item-container">
+    cartContainer.innerHTML += `<a class="cart-item-container" href="details.html?id=${cartItem.id}">
                                     <img class="cart-img" src="${cartItem.image}">
                                     <h4 class="cart-item-title">${cartItem.title}</h4>
                                     <p class="cart-item-prise-p">${cartItem.price}</p>
-                                </div>`;
+                                </a>`;
 });
 
 console.log(addedCartItems);
