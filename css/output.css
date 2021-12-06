@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+  background-color: #BDBDBD;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .nav-container {
   background-color: #191919;
 }
@@ -36,6 +44,7 @@ footer {
   align-items: center;
   background-color: #191919;
   padding-top: 20px;
+  margin-top: auto;
 }
 
 .footer-p {
@@ -48,12 +57,6 @@ footer {
 
 a {
   text-decoration: none;
-}
-
-body {
-  margin: 0;
-  background-color: #BDBDBD;
-  font-size: 100%;
 }
 
 .hero-div {
