@@ -49,7 +49,7 @@ console.log(productUrl);
                                 <div class="price-button-container">
                                 <p class="details-price-p">$ ${details.price}</p>
                                 <div class="cart-button-container">
-                                <i class="fas ${cssClass}" data-id="${details.id}" data-title="${details.title}" data-link="" data-price="${details.price}"></i>
+                                <i class="fas ${cssClass}" data-id="${details.id}" data-title="${details.title}" data-link="" data-price="${details.price}" data-image="${imgBasicUrl + details.image_url}"></i>
                                 </div>
                                 </div>
                                 </div>`;
@@ -68,6 +68,7 @@ console.log(productUrl);
                                     const id = this.dataset.id;
                                     const title = this.dataset.title;
                                     const price = this.dataset.price;
+                                    const image = this.dataset.image;
 
                                     const currentStoredProds = getStoredProducts();
 
@@ -76,7 +77,7 @@ console.log(productUrl);
                                     });
 
                                     if(cartItemExists === undefined) {
-                                        const cartItem = { id: id, title: title, price: price};
+                                        const cartItem = { id: id, title: title, price: price, image: image};
                                         currentStoredProds.push(cartItem);
                                         saveProds(currentStoredProds);
                                     }
