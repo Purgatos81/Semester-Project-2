@@ -27,7 +27,7 @@ console.log(productUrl);
         const response = await fetch(productUrl);
         const details = await response.json();
         let cssClass = "fa-cart-plus";
-        //check for existing items in array to set i fav class
+
         const doesCartItemExist = addedCartItems.find(function (added) {
             console.log(added);
 

@@ -16,6 +16,35 @@
     margin-bottom: 20px;
 }
 
-.cart-img {
+.cart-item-image-a {
     max-width: 20%;
+    background-color: white;
+    border-radius: 5px 0 0 5px;
+}
+
+.cart-img {
+    max-width: 100%;
+    border-radius: 5px 0 0 5px;
+}
+
+.cart-item-text-a {
+    background-color: white;
+    max-width: 20%;
+    min-width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 5px 5px 0;
+}
+
+.cart-item-title {
+    color: variables.$text-color-dark;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cart-item-prise-p {
+    color: variables.$text-color-dark;
+    align-self: flex-end;
+    padding-right: 15px;
 }
