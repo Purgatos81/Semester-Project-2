@@ -38,27 +38,6 @@ body {
   padding-right: 10px;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #191919;
-  padding-top: 20px;
-  margin-top: auto;
-}
-
-.footer-p {
-  color: #ffffff;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
 .hero-div {
   background-color: #191919;
   position: relative;
@@ -95,6 +74,42 @@ a {
   background-color: #191919;
   padding-bottom: 100px;
   margin: 0;
+}
+
+.banner-text-placement-container {
+  position: absolute;
+  top: 40%;
+  right: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.9em;
+  color: #ffffff;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #191919;
+  padding-top: 20px;
+  margin-top: auto;
+}
+
+.footer-p {
+  color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 .main-featured-h2 {
@@ -150,7 +165,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 10% 60px 10%;
+  padding: 20px 10% 60px 10%;
 }
 
 .product-card-container {
