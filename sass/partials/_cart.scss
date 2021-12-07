@@ -55,6 +55,9 @@
 
 .cart-total-container {
     min-width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20%;
 }
 
 .cart-total-h4 {
