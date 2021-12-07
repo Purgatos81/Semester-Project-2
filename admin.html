@@ -36,31 +36,45 @@
         </nav>
     </div>
     <main class="admin-container-main">
-        <h1 class="admin-h2">Add new products</h1>
-        <p class="admin-p">Go to <a class="admin-product-link" href="products.html">products</a> and clickproduct to edit it</p>
-        <form class="admin-container">
-            <div class="message-container"></div>
-            <div>
-                <label for="title">Title</label>
-                <input id="title" />
-            </div>
-            <div>
-                <label for="price">Price</label>
-                <input id="price" />
-            </div>
-            <div>
-                <label for="description">Description</label>
-                <textarea id="description"></textarea>
-            </div>
-            <button>Add</button>
-        </form>
-
-        <hr>
-
-        <div class="logout-container">
-            <button id="logout">Logout</button>
+        <!-- <h1 class="admin-h2">Add new products</h1> -->
+        <div class="admin-container">
+            <form class="admin-form-container">
+                <h2 class="admin-h2">Add Product</h2>
+                <div class="message-container"></div>
+                <div class="admin-title-container">
+                    <label for="title">Title</label>
+                    <input id="title" class="admin-title" placeholder="Enter Title"/>
+                </div>
+                <div class="admin-price-container">
+                    <label for="price">Price</label>
+                    <input id="price" class="admin-price" placeholder="Enter Price"/>
+                </div>
+                <div class="admin-image-container">
+                    <label for="image">Image</label>
+                    <input id="image" class="admin-image" placeholder="Add Image File"/>
+                </div>
+                <div class="admin-description-container">
+                    <label for="description">Description</label>
+                    <textarea id="description" class="admin-description" placeholder="Enter Description"></textarea>
+                </div>
+                <div class="admin-button-container">
+                    <button class="admin-button">Add</button>
+                </div>    
+            </form>
+            <div class="admin-info-container">
+                <h3 class="admin-description-h3">Here you can add products to your page.<br> Go to <a class="admin-product-link" href="products.html">products</a> and click product to edit it. <br> Click logout button to logout.</h3>
+                <div class="logout-button-container">
+                    <button id="logout" class="logout-button">Logout</button>
+                </div>
+            </div>           
         </div>
     </main>
+    <footer>
+        <a class="nav-a" class="logo-a-link" href="index.html">
+            <img class="logo-img" src="media/SpeakerLogoWithWhiteText.png" alt="logo">
+        </a>
+        <p class="footer-p">&copy;Design Speakers 2021</p>
+    </footer>
     <script src="js/admin.js" type="module"></script>
 </body>
 </html>

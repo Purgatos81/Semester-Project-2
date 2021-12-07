@@ -1,12 +1,13 @@
 @use 'variables';
 
-.login-container {
+.admin-container {
     display: flex;
     border-radius: 5px;
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-.login-form-container {
+.admin-form-container {
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -17,17 +18,10 @@
     border-radius: 10px 0 0 10px;
 }
 
-.username-form-container, .password-form-container {
+.admin-info-container {
     display: flex;
     flex-direction: column;
-    align-self: center;
-    min-width: 80%;
-    font-family: variables.$tertiary-font;
-    font-size: 1.2rem;
-}
-
-.login-description-container {
-    display: flex;
+    justify-content: space-between;
     background-color: variables.$tertiary-color;
     max-width: 30%;
     min-width: 30%;
@@ -36,11 +30,20 @@
     border-radius: 0 10px 10px 0;
 }
 
-.login-button-container {
+.admin-title-container, .admin-price-container, .admin-image-container, .admin-description-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    min-width: 80%;
+    font-family: variables.$tertiary-font;
+    font-size: 1.2rem;
+}
+
+.admin-button-container {
     align-self: center;
 }
 
-.login-button {
+.admin-button {
     background-color: variables.$tertiary-color;
     color: white;
     margin-bottom: 30px;
@@ -51,13 +54,28 @@
     cursor: pointer;
 }
 
-.login-h2 {
+.logout-button-container {
+    align-self: center;
+}
+
+.logout-button {
+    background-color: variables.$tertiary-color;
+    color: white;
+    margin-bottom: 30px;
+    font-family: variables.$tertiary-font;
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-h2 {
     font-family: variables.$primary-font;
     color: variables.$text-color-dark;
     align-self: center;
 }
 
-#username, #password {
+.admin-title, .admin-price, .admin-image, .admin-description {
     background-color: lightgrey;
     margin-bottom: 25px;
     border-radius: 5px;
@@ -66,10 +84,15 @@
     font-size: 1.2rem;
 }
 
-.login-description-h3 {
+.admin-description-h3 {
     font-family: variables.$primary-font;
     color: variables.$text-color-light;
     align-self: center;
     line-height: 1.7em;
     font-size: 1.7em;
+}
+
+.admin-product-link {
+    text-decoration: underline;
+    color: variables.$secondary-color;
 }

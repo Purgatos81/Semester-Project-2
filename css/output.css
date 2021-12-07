@@ -280,6 +280,7 @@ a {
   font-size: 1.2rem;
   padding: 5px 15px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .login-h2 {
@@ -303,6 +304,103 @@ a {
   align-self: center;
   line-height: 1.7em;
   font-size: 1.7em;
+}
+
+.admin-container {
+  display: flex;
+  border-radius: 5px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.admin-form-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 30%;
+  min-width: 30%;
+  margin-left: 20%;
+  border-radius: 10px 0 0 10px;
+}
+
+.admin-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #3F3F3F;
+  max-width: 30%;
+  min-width: 30%;
+  margin-right: 20%;
+  padding: 30px 5%;
+  border-radius: 0 10px 10px 0;
+}
+
+.admin-title-container, .admin-price-container, .admin-image-container, .admin-description-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  min-width: 80%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+}
+
+.admin-button-container {
+  align-self: center;
+}
+
+.admin-button {
+  background-color: #3F3F3F;
+  color: white;
+  margin-bottom: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button-container {
+  align-self: center;
+}
+
+.logout-button {
+  background-color: #3F3F3F;
+  color: white;
+  margin-bottom: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-h2 {
+  font-family: "Ubuntu", sans-serif;
+  color: #000000;
+  align-self: center;
+}
+
+.admin-title, .admin-price, .admin-image, .admin-description {
+  background-color: lightgrey;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  border: transparent;
+  padding: 20px 20px;
+  font-size: 1.2rem;
+}
+
+.admin-description-h3 {
+  font-family: "Ubuntu", sans-serif;
+  color: #ffffff;
+  align-self: center;
+  line-height: 1.7em;
+  font-size: 1.7em;
+}
+
+.admin-product-link {
+  text-decoration: underline;
+  color: #BDBDBD;
 }
 
 .cart-container-main {
