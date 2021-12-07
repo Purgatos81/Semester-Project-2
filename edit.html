@@ -35,38 +35,41 @@
             </ul>
         </nav>
     </div>
-    <main class="featured-container-main">
-        <h1 class="main-edit-h2">EDIT PRODUCT</h1>
+    <main class="edit-container-main">
+        <!-- <h1 class="main-edit-h2">EDIT PRODUCT</h1> -->
         <div class="edit-container">
             <div class="loader"></div>
-            <form class="edit-form">
+            <form class="edit-form-container">
+                <h2 class="edit-h2">Edit Product</h2>
                 <div class="message-container"></div>
-
-                <div>
+                <div class="edit-title-container">
                     <label for="title">Title</label>
-                    <input id="title" />
+                    <input id="title" class="edit-title"/>
                 </div>
-                <div>
+                <div class="edit-price-container">
                     <label for="price">Price</label>
-                    <input id="price" />
+                    <input id="price" class="edit-price" />
                 </div>
-                <div>
+                <div class="edit-image-container">
+                    <label for="image">Image</label>
+                    <input id="image" class="edit-image" />
+                </div>
+                <div class="edit-description-container">
                     <label for="description">Description</label>
-                    <textarea id="description"></textarea>
+                    <textarea id="description" class="edit-description"></textarea>
                 </div>
 
                 <input id="id" type="hidden" />
 
-                <div>
-                    <button id="update">Update</button>
-                </div>
-
-                <hr>
-
-                <div class="delete-button-container">
-                    
+                <div class="edit-button-container">
+                    <button id="update" class="uppdate-button">Update</button>
                 </div>
             </form>
+            <div class="edit-info-container">
+                <h3 class="edit-description-h3">Here you can edit your products, or you can delete them by pressing the delete button below.</h3>
+                <div class="delete-button-container">                    
+                </div>
+            </div>
         </div>
     </main>
     <footer>

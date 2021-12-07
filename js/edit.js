@@ -47,7 +47,7 @@ const loading = document.querySelector(".loader");
         console.log(error);
     } finally {
         loading.style.display = "none";
-        form.style.display = "block";
+        form.style.display = "flex";
     }
 })();
 
