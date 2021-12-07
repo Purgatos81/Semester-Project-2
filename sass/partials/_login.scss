@@ -1,0 +1,75 @@
+@use 'variables';
+
+.login-container {
+    display: flex;
+    border-radius: 5px;
+    margin-top: 10%;
+}
+
+.login-form-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 30%;
+    min-width: 30%;
+    margin-left: 20%;
+    border-radius: 10px 0 0 10px;
+}
+
+.username-form-container, .password-form-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    min-width: 80%;
+    font-family: variables.$tertiary-font;
+    font-size: 1.2rem;
+}
+
+.login-description-container {
+    display: flex;
+    background-color: variables.$tertiary-color;
+    max-width: 30%;
+    min-width: 30%;
+    margin-right: 20%;
+    padding: 30px 5%;
+    border-radius: 0 10px 10px 0;
+}
+
+.login-button-container {
+    align-self: center;
+
+}
+
+.login-button {
+    background-color: variables.$tertiary-color;
+    color: white;
+    margin-bottom: 30px;
+    font-family: variables.$tertiary-font;
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.login-h2 {
+    font-family: variables.$primary-font;
+    color: variables.$text-color-dark;
+    align-self: center;
+}
+
+#username, #password {
+    background-color: lightgrey;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: transparent;
+    padding: 20px 20px;
+    font-size: 1.2rem;
+}
+
+.login-description-h3 {
+    font-family: variables.$primary-font;
+    color: variables.$text-color-light;
+    align-self: center;
+    line-height: 1.7em;
+    font-size: 1.7em;
+}

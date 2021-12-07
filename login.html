@@ -36,20 +36,27 @@
         </nav>
     </div>
     <main class="login-main">
+        <!-- <h1>Admin Login</h1> -->
         <div class="login-container">
-            <h1>Login</h1>
-            <form>
+            <form class="login-form-container">
+                <h2 class="login-h2">Login</h2>
                 <div class="login-message-container"></div>
                 <div class="username-form-container">
                     <label for="username">Username/email</label>
-                    <input id="username" />
+                    <input id="username" placeholder="Username"/>
                 </div>
                 <div class="password-form-container">
                     <label for="password">Password</label>
-                    <input id="password" type="password" />
+                    <input id="password" type="password" placeholder="Password"/>
                 </div>
-                <button>Submit</button>
+                <div class="login-button-container">
+                    <button class="login-button">Submit</button>
+                </div>
             </form>
+            <div class="login-description-container">
+                <h3 class="login-description-h3">Log in to add, edit or delete 
+                    products on this website. Only for administrators of this site.</h3>
+            </div>
         </div>
     </main>
     <script src="js/login.js" type="module"></script>
