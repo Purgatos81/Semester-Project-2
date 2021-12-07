@@ -5,6 +5,7 @@ import { imgBasicUrl } from "./settings/api.js";
 import { getUsername } from "./utils/storage.js";
 
 const productsUrl = baseUrl + "products";
+const search = document.querySelector("search");
 const username = getUsername();
 
 createLogin();

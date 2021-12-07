@@ -156,6 +156,27 @@ a {
   text-decoration: none;
 }
 
+.products-container-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-container {
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+}
+
+.search {
+  background-color: lightgrey;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: transparent;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+
 .products-h2 {
   font-family: "Ubuntu", sans-serif;
   padding: 50px 0 20px 10%;
