@@ -25,11 +25,13 @@ async function prodCall() {
 
         bson.forEach(function (product) {
             if(username) {
-                container.innerHTML += `<a class="featured-product" href="edit.html?id=${product.id}">
-                                        <img class="featured-img" src="${imgBasicUrl + product.image_url}">
-                                        <h4 class="featured-h4">${product.title}</h4>
-                                        <p class="featured-p">$ ${product.price}</p>
-                                        </a>`;
+                container.innerHTML += `<div class="product-card-container">
+                                        <a class="product-card" href="edit.html?id=${product.id}">
+                                        <img class="product-img" src="${imgBasicUrl + product.image_url}">
+                                        <h4 class="product-h4">${product.title}</h4>
+                                        <p class="product-p">$ ${product.price}</p>
+                                        </a>
+                                        </div>`;
             } else {
                 container.innerHTML += `<div class="product-card-container">
                                         <a class="product-card" href="details.html?id=${product.id}">
@@ -57,11 +59,13 @@ async function prodCall() {
 
                 bson.forEach(function (product) {
                     if(username) {
-                        container.innerHTML += `<a class="featured-product" href="edit.html?id=${product.id}">
-                                                <img class="featured-img" src="${imgBasicUrl + product.image_url}">
-                                                <h4 class="featured-h4">${product.title}</h4>
-                                                <p class="featured-p">$ ${product.price}</p>
-                                                </a>`;
+                        container.innerHTML += `<div class="product-card-container">
+                                                <a class="product-card" href="edit.html?id=${product.id}">
+                                                <img class="product-img" src="${imgBasicUrl + product.image_url}">
+                                                <h4 class="product-h4">${product.title}</h4>
+                                                <p class="product-p">$ ${product.price}</p>
+                                                </a>
+                                                </div>`;
                     } else {
                         container.innerHTML += `<div class="product-card-container">
                                                 <a class="product-card" href="details.html?id=${product.id}">
