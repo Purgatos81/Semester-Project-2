@@ -11,7 +11,8 @@ let total = 0;
 createLogin();
 
 if (addedCartItems.length === 0) {
-    cartContainer.innerHTML = "<h1>No items in Cart</h1>";
+    cartContainer.innerHTML = `<h2 class="cart-h2">No items in Cart</h2>`;
+    totalContainer.innerHTML = "";
 }
 
 addedCartItems.forEach((cartItem) => {
