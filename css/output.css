@@ -425,7 +425,7 @@ a {
   max-width: 30%;
   min-width: 30%;
   margin-right: 20%;
-  padding: 30px 5%;
+  padding: 85px 5% 0 5%;
   border-radius: 0 10px 10px 0;
 }
 
@@ -472,6 +472,7 @@ a {
   font-family: "Ubuntu", sans-serif;
   color: #000000;
   align-self: center;
+  font-size: 2em;
 }
 
 .admin-title, .admin-price, .admin-image, .admin-description {
@@ -487,8 +488,8 @@ a {
   font-family: "Ubuntu", sans-serif;
   color: #ffffff;
   align-self: center;
-  line-height: 1.7em;
-  font-size: 1.7em;
+  line-height: 1.5em;
+  font-size: 1.5em;
 }
 
 .admin-product-link {
