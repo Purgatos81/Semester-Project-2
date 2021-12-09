@@ -50,9 +50,11 @@ const toggle = document.querySelector(".toggle-button-container");
         console.log(details);
         console.log(featured.value);
         if (featured.value === "true" ) {
-            toggle.innerHTML = `<i id="toggle-button" class="fas fa-toggle-on">Toggle Featured Off</i>`;
+            toggle.innerHTML = `<p class="toggle-p">Toggle Featured Off</p>
+                                <i id="toggle-button" class="fas fa-toggle-on"></i>`;
         } else {
-            toggle.innerHTML = `<i id="toggle-button" class="fas fa-toggle-off">Toggle Featured On</i>`;
+            toggle.innerHTML = `<p class="toggle-p">Toggle Featured On</p>
+                                <i id="toggle-button" class="fas fa-toggle-off"></i>`;
         }
     } catch (error) {
         console.log(error);
@@ -69,10 +71,12 @@ const toggle = document.querySelector(".toggle-button-container");
 
         if (featured.value === "false") {
             featured.value = true;
-            toggle.innerHTML = `<i id="toggle-button" class="fas fa-toggle-on">Toggle Featured Off</i>`;
+            toggle.innerHTML = `<p class="toggle-p">Toggle Featured Off</p>
+                                <i id="toggle-button" class="fas fa-toggle-on"></i>`;
         } else {
             featured.value = false;
-            toggle.innerHTML = `<i id="toggle-button" class="fas fa-toggle-off">Toggle Featured On</i>`;
+            toggle.innerHTML = `<p class="toggle-p">Toggle Featured On</p>
+                                <i id="toggle-button" class="fas fa-toggle-off"></i>`;
         }
 
     }
