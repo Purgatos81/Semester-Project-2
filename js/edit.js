@@ -27,6 +27,7 @@ const title = document.querySelector("#title");
 const price = document.querySelector("#price");
 const image = document.querySelector("#image");
 const description = document.querySelector("#description");
+const featured = document.querySelector("#featured")
 const idInput = document.querySelector("#id");
 const message = document.querySelector(".message-container");
 const loading = document.querySelector(".loader");
@@ -40,6 +41,7 @@ const loading = document.querySelector(".loader");
         price.value = details.price;
         image.value = details.image_url;
         description.value = details.description;
+        featured.value = details.featured;
         idInput.value = details.id;
 
         deleteButton(details.id);
@@ -64,18 +66,19 @@ function submitForm(event) {
     const priceValue = parseFloat(price.value);
     const imageValue = image.value.trim();
     const descriptionValue = description.value.trim();
+    const featuredValue = featured.value.trim();
     const idValue = idInput.value;
 
-    if (titleValue.length === 0 || priceValue === 0 || imageValue.length === 0 || isNaN(priceValue) || descriptionValue.length === 0) {
+    if (titleValue.length === 0 || priceValue === 0 || imageValue.length === 0 || isNaN(priceValue) || descriptionValue.length === 0 || featuredValue.length === 0 ) {
         return displayMessage("warning", "Please supply proper values", ".message-container");
     }
 
-    updateProduct(titleValue, priceValue, imageValue, descriptionValue, idValue);
+    updateProduct(titleValue, priceValue, imageValue, descriptionValue, featuredValue, idValue);
 }
 
-async function updateProduct(title, price, image, description, id) {
+async function updateProduct(title, price, image, description, featured, id) {
     const url = baseUrl + "products/" + id;
-    const data = JSON.stringify({ title: title, price: price, image_url: image, description: description });
+    const data = JSON.stringify({ title: title, price: price, image_url: image, description: description, featured: featured });
 
 
     const options = {
