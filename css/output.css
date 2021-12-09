@@ -681,26 +681,23 @@ a {
 .message {
   width: 100%;
   padding: 0.9rem;
-  border: 1px solid black;
   color: black;
+  text-align: center;
 }
 
 .message.error {
-  border-color: red;
-  color: white;
-  background: red;
+  color: red;
+  font-family: "Open Sans", sans-serif;
 }
 
 .message.warning {
-  border-color: orange;
-  color: white;
-  background: orange;
+  color: red;
+  font-family: "Open Sans", sans-serif;
 }
 
 .message.success {
-  border-color: green;
-  color: white;
-  background: green;
+  color: green;
+  font-family: "Open Sans", sans-serif;
 }
 
 /*# sourceMappingURL=output.css.map */
