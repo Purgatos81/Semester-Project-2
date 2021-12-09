@@ -20,7 +20,7 @@
 
 .hero-header {
     font-family: variables.$primary-font;
-    font-size: 1.9em;
+    font-size: 2em;
 }
 
 .cta-button {
@@ -28,8 +28,15 @@
     font-family: variables.$seconday-font;
     background-color: variables.$tertiary-color;
     color: variables.$text-color-light;
+    font-size: 1.3em;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 50px;
+}
+
+.cta-button:hover {
+    background-color: variables.$text-color-light;
+    color: variables.$tertiary-color;
+    border: solid 2px variables.$tertiary-color;
 }
 
 .hero-bottom-edge-container {
