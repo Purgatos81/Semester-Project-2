@@ -31,6 +31,7 @@ const featured = document.querySelector("#featured")
 const idInput = document.querySelector("#id");
 const message = document.querySelector(".message-container");
 const loading = document.querySelector(".loader");
+const toggle = document.querySelector(".toggle-button-container");
 
 (async function () {
     try {
@@ -47,12 +48,36 @@ const loading = document.querySelector(".loader");
         deleteButton(details.id);
 
         console.log(details);
+        console.log(featured.value);
+        if (featured.value === "true" ) {
+            toggle.innerHTML = `<i id="toggle-button" class="fas fa-toggle-on">Toggle Featured Off</i>`;
+        } else {
+            toggle.innerHTML = `<i id="toggle-button" class="fas fa-toggle-off">Toggle Featured On</i>`;
+        }
     } catch (error) {
         console.log(error);
     } finally {
         loading.style.display = "none";
         form.style.display = "flex";
     }
+    const toggleButton = document.querySelector("#toggle-button");
+
+    toggleButton.onclick = function() {toggleFunction()};
+
+    function toggleFunction() {
+        console.log(event);
+
+        if (featured.value === "false") {
+            featured.value = true;
+            toggle.innerHTML = `<i id="toggle-button" class="fas fa-toggle-on">Toggle Featured Off</i>`;
+        } else {
+            featured.value = false;
+            toggle.innerHTML = `<i id="toggle-button" class="fas fa-toggle-off">Toggle Featured On</i>`;
+        }
+
+    }
+
+    console.log(toggleButton);
 })();
 
 form.addEventListener("submit", submitForm);

@@ -525,6 +525,14 @@ a {
   cursor: pointer;
 }
 
+.toggle-button-container {
+  display: flex;
+}
+
+.fa-toggle-on, .fa-toggle-off {
+  cursor: pointer;
+}
+
 .delete-button-container {
   align-self: center;
 }
