@@ -27,7 +27,7 @@ async function prodCall() {
             if(username) {
                 container.innerHTML += `<div class="product-card-container">
                                         <a class="product-card" href="edit.html?id=${product.id}">
-                                        <img class="product-img" src="${imgBasicUrl + product.image_url}">
+                                        <img class="product-img" src="${imgBasicUrl + product.image_url}" alt="${product.image.alternativeText}">
                                         <h4 class="product-h4">${product.title}</h4>
                                         <p class="product-p">$ ${product.price}</p>
                                         </a>
@@ -35,7 +35,7 @@ async function prodCall() {
             } else {
                 container.innerHTML += `<div class="product-card-container">
                                         <a class="product-card" href="details.html?id=${product.id}">
-                                        <img class="product-img" src="${imgBasicUrl + product.image_url}">
+                                        <img class="product-img" src="${imgBasicUrl + product.image_url}" alt="${product.image.alternativeText}">
                                         <h4 class="product-h4" >${product.title}</h4>
                                         <p class="product-p" >Price: ${product.price}</p>
                                         </a></div>`;
@@ -61,7 +61,7 @@ async function prodCall() {
                     if(username) {
                         container.innerHTML += `<div class="product-card-container">
                                                 <a class="product-card" href="edit.html?id=${product.id}">
-                                                <img class="product-img" src="${imgBasicUrl + product.image_url}">
+                                                <img class="product-img" src="${imgBasicUrl + product.image_url}" alt="${product.image.alternativeText}">
                                                 <h4 class="product-h4">${product.title}</h4>
                                                 <p class="product-p">$ ${product.price}</p>
                                                 </a>
@@ -69,7 +69,7 @@ async function prodCall() {
                     } else {
                         container.innerHTML += `<div class="product-card-container">
                                                 <a class="product-card" href="details.html?id=${product.id}">
-                                                <img class="product-img" src="${imgBasicUrl + product.image_url}">
+                                                <img class="product-img" src="${imgBasicUrl + product.image_url}" alt="${product.image.alternativeText}">
                                                 <h4 class="product-h4" >${product.title}</h4>
                                                 <p class="product-p" >Price: ${product.price}</p>
                                                 </a></div>`;

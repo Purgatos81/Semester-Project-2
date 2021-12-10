@@ -42,7 +42,7 @@ console.log(productUrl);
 
         const container = document.querySelector(".detail-container");
 
-        container.innerHTML = `<img class="details-img" src="${imgBasicUrl + details.image_url}">
+        container.innerHTML = `<img class="details-img" src="${imgBasicUrl + details.image_url}" alt="${details.image.alternativeText}">
                                 <div class="details-text-container">
                                 <h2 class="details-h2">${details.title}</h1>
                                 <p class="details-p">${details.description}</p>
