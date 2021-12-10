@@ -650,7 +650,7 @@ a {
 }
 
 .cart-item-text-a {
-  background-color: white;
+  background-color: #3F3F3F;
   max-width: 20%;
   min-width: 20%;
   display: flex;
@@ -660,13 +660,13 @@ a {
 }
 
 .cart-item-title {
-  color: #000000;
+  color: #ffffff;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 .cart-item-prise-p {
-  color: #000000;
+  color: #ffffff;
   align-self: flex-end;
   padding-right: 15px;
 }
@@ -679,8 +679,14 @@ a {
 }
 
 .cart-total-h4 {
+  background-color: #3F3F3F;
+  color: #ffffff;
   font-family: "Ubuntu", sans-serif;
   text-decoration: underline;
+  align-self: flex-start;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0;
 }
 
 .loader {
