@@ -7,6 +7,22 @@
     width: 40px;
     height: 40px;
     animation: spin 0.5s linear infinite;
+    align-self: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#index-loader {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+}
+
+#products-loader {
+    position: absolute;
+    top: 60%;
+    left: 50%;
 }
 
 @keyframes spin {

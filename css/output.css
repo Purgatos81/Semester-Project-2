@@ -285,16 +285,20 @@ a {
 .detail-container {
   display: flex;
   margin: 0 20%;
+  border-radius: 25px;
+  box-shadow: 10px 10px 10px grey;
 }
 
 .details-img {
   max-width: 30%;
+  border-radius: 25px 0 0 25px;
 }
 
 .details-text-container {
   background-color: #3F3F3F;
   display: grid;
   padding: 0 30px;
+  border-radius: 0 25px 25px 0;
 }
 
 .details-h2 {
@@ -331,7 +335,7 @@ a {
 /*<i class="fas fa-trash-alt"></i>*/
 .login-container {
   display: flex;
-  border-radius: 5px;
+  border-radius: 25px;
   margin-top: 10%;
 }
 
@@ -343,7 +347,8 @@ a {
   max-width: 30%;
   min-width: 30%;
   margin-left: 20%;
-  border-radius: 10px 0 0 10px;
+  border-radius: 25px 0 0 25px;
+  box-shadow: 15px 10px 10px grey;
 }
 
 .username-form-container, .password-form-container {
@@ -362,7 +367,8 @@ a {
   min-width: 30%;
   margin-right: 20%;
   padding: 30px 5%;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 25px 25px 0;
+  box-shadow: 10px 10px 10px grey;
 }
 
 .login-button-container {
@@ -503,6 +509,7 @@ a {
 
 .edit-container {
   display: flex;
+  flex-wrap: wrap;
   border-radius: 5px;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -636,27 +643,29 @@ a {
 .cart-item-container {
   display: flex;
   margin-bottom: 20px;
+  box-shadow: 10px 10px 10px grey;
+  border-radius: 25px;
 }
 
 .cart-item-image-a {
-  max-width: 20%;
+  max-width: 30%;
   background-color: white;
-  border-radius: 5px 0 0 5px;
+  border-radius: 25px 0 0 25px;
 }
 
 .cart-img {
   max-width: 100%;
-  border-radius: 5px 0 0 5px;
+  border-radius: 25px 0 0 25px;
 }
 
 .cart-item-text-a {
   background-color: #3F3F3F;
-  max-width: 20%;
-  min-width: 20%;
+  max-width: 100%;
+  min-width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 25px 25px 0;
 }
 
 .cart-item-title {
@@ -685,7 +694,7 @@ a {
   text-decoration: underline;
   align-self: flex-start;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 25px;
   margin: 0;
 }
 
@@ -696,6 +705,22 @@ a {
   width: 40px;
   height: 40px;
   animation: spin 0.5s linear infinite;
+  align-self: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+#index-loader {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+}
+
+#products-loader {
+  position: absolute;
+  top: 60%;
+  left: 50%;
 }
 
 @keyframes spin {
