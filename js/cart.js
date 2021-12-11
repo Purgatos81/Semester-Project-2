@@ -37,7 +37,7 @@ console.log(addedCartItems);
 for (let i = 0; i < addedCartItems.length; i++) {
 
     total += parseInt (addedCartItems[i].price);
-    console.log(typeof finalTotal);
+    console.log(typeof total);
 
     totalContainer.innerHTML = `<h4 class="cart-total-h4">Total $ ${total}</h4>`
 };

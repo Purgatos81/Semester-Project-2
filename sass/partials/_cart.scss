@@ -51,12 +51,14 @@
     color: variables.$text-color-light;
     padding-left: 15px;
     padding-right: 15px;
+    font-family: variables.$seconday-font;
 }
 
 .cart-item-prise-p {
     color: variables.$text-color-light;
     align-self: flex-end;
     padding-right: 15px;
+    font-family: variables.$primary-font;
 }
 
 .cart-total-container {
@@ -69,7 +71,7 @@
 .cart-total-h4 {
     background-color: variables.$tertiary-color;
     color: variables.$text-color-light;
-    font-family: variables.$primary-font;
+    font-family: variables.$seconday-font;
     text-decoration: underline;
     align-self: flex-start;
     padding: 20px;
