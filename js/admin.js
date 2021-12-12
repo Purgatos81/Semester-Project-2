@@ -1,4 +1,5 @@
-import createLogin from "./components/common/createNav.js";
+// import createLogin from "./components/common/createNav.js";
+import { createAdminLogin } from "./components/common/createNav.js";
 import displayMessage from "./components/common/displayMessage.js";
 import { baseUrl } from "./settings/api.js";
 import { getToken } from "./utils/storage.js";
@@ -10,7 +11,7 @@ if (!token) {
     location.href = "index.html";
 }
 
-createLogin();
+createAdminLogin();
 logoutButton();
 
 const form = document.querySelector("form");

@@ -30,6 +30,10 @@
         font-family: variables.$seconday-font;
     }
     
+    .active {
+        color: gray;
+    }
+
     .nav-a:hover {
         border-bottom: 2px solid white;
     }
