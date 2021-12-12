@@ -35,7 +35,7 @@ body {
   }
 
   .active {
-    color: gray;
+    color: lightgrey;
   }
 
   .nav-a:hover {
@@ -109,6 +109,10 @@ body {
     border-bottom: 2px solid #191919;
   }
 
+  .active {
+    color: grey;
+  }
+
   .nav-a:hover {
     border-bottom: 2px solid white;
   }
@@ -173,6 +177,10 @@ body {
     color: white;
     font-family: "Roboto", sans-serif;
     border-bottom: 2px solid #191919;
+  }
+
+  .active {
+    color: grey;
   }
 
   .nav-a:hover {

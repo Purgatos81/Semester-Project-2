@@ -16,7 +16,6 @@ if (addedCartItems.length === 0) {
 }
 
 addedCartItems.forEach((cartItem) => {
-
     cartContainer.innerHTML += `<div class="cart-item-container">
                                     <a class="cart-item-image-a" href="details.html?id=${cartItem.id}">
                                     <img class="cart-img" src="${cartItem.image}">
