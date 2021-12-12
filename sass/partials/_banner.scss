@@ -9,29 +9,11 @@
     max-width: 100%;
 }
 
-.hero-text-placement-container {
-    position: absolute;
-    top: 40%;
-    left: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.hero-header {
-    font-family: variables.$primary-font;
-    font-size: 2em;
-}
 
-.cta-button {
-    text-decoration: none;
-    font-family: variables.$seconday-font;
-    background-color: variables.$tertiary-color;
-    color: variables.$text-color-light;
-    font-size: 1.3em;
-    padding: 10px 20px;
-    border-radius: 50px;
-}
+
+
+
 
 .cta-button:hover {
     background-color: variables.$text-color-light;
@@ -59,4 +41,80 @@
     font-family: variables.$primary-font;
     font-size: 1.9em;
     color: variables.$text-color-light;
+}
+
+@media only screen and (min-width:991px) {
+    .hero-text-placement-container {
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-header {
+        font-family: variables.$primary-font;
+        font-size: 2em;
+    }
+
+    .cta-button {
+        text-decoration: none;
+        font-family: variables.$seconday-font;
+        background-color: variables.$tertiary-color;
+        color: variables.$text-color-light;
+        font-size: 1.3em;
+        padding: 10px 20px;
+        border-radius: 50px;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:990px) {
+    .hero-text-placement-container {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-header {
+        font-family: variables.$primary-font;
+        font-size: 1.6em;
+    }
+
+    .cta-button {
+        text-decoration: none;
+        font-family: variables.$seconday-font;
+        background-color: variables.$tertiary-color;
+        color: variables.$text-color-light;
+        font-size: 1.2em;
+        padding: 10px 15px;
+        border-radius: 50px;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:599px) {
+    .hero-text-placement-container {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-header {
+        font-family: variables.$primary-font;
+        font-size: 1.4em;
+    }
+
+    .cta-button {
+        text-decoration: none;
+        font-family: variables.$seconday-font;
+        background-color: variables.$tertiary-color;
+        color: variables.$text-color-light;
+        font-size: 1.1em;
+        padding: 10px 15px;
+        border-radius: 50px;
+    }
 }
