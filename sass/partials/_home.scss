@@ -15,17 +15,22 @@ a {
 
 .featured-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 10% 60px 10%;
 }
 
 .featured-product {
-    width: 17%;
+    // width: 17%;
+    max-width: 17%;
+    min-width: 200px;
     background-color: variables.$tertiary-color;
     box-shadow: 10px 10px 10px grey;
     border-radius: 25px;
     transition-property: box-shadow;
     transition-duration: 0.5s;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 .featured-product:hover {
