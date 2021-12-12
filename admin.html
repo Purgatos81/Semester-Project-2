@@ -14,6 +14,11 @@
 <body>
     <div class="nav-container">
         <nav class="navigation">
+            <a id="corner-logo" class="nav-a" href="index.html">
+                <img class="logo-nav-img" src="media/SpeakerLogoWithWhiteText.png" alt="logo">
+            </a>
+            <label class="hamburger-label" for="hamburger-checkbox"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="hamburger-checkbox">
             <ul class="nav-ul">
                 <li>
                     <a class="nav-a" href="index.html">Home</a>
@@ -21,13 +26,12 @@
                 <li>
                     <a class="nav-a" href="products.html">Products</a>
                 </li>
-                <li>
-                    <a class="nav-a" href="index.html">
-                        <img class="logo-img" src="media/SpeakerLogoWithWhiteText.png" alt="logo">
+                <li class="middle-logo-container">
+                    <a id="middle-logo" class="nav-a" href="index.html">
+                        <img class="logo-nav-img" src="media/SpeakerLogoWithWhiteText.png" alt="logo">
                     </a>
                 </li>
-                <li class="login-li-container">
-                    <!-- <a class="nav-a" href="login.html"><i class="fas fa-user-cog" id="nav-icon"></i>Login</a> -->
+                <li class="login-li-container">                  
                 </li>
                 <li>
                     <a class="nav-a" href="cart.html"><i class="fas fa-shopping-cart" id="nav-icon"></i>Cart</a>
@@ -36,7 +40,6 @@
         </nav>
     </div>
     <main class="admin-container-main">
-        <!-- <h1 class="admin-h2">Add new products</h1> -->
         <div class="admin-container">
             <form class="admin-form-container">
                 <h2 class="admin-h2">Add Product</h2>
@@ -73,7 +76,7 @@
         <a class="nav-a" href="index.html">
             <img class="logo-img" src="media/SpeakerLogoWithWhiteText.png" alt="logo">
         </a>
-        <p class="footer-p">&copy;Design Speakers 2021</p>
+        <p class="footer-p">&copy; Design Speakers 2021</p>
     </footer>
     <script src="js/admin.js" type="module"></script>
 </body>

@@ -38,7 +38,7 @@ body {
     border-bottom: 2px solid white;
   }
 
-  .logo-img {
+  .logo-nav-img {
     max-width: 100%;
     max-height: 50px;
   }
@@ -70,7 +70,7 @@ body {
     cursor: auto;
   }
 
-  .logo-img {
+  .logo-nav-img {
     max-width: 100%;
     max-height: 50px;
     margin: 30px 0 30px 50px;
@@ -136,7 +136,7 @@ body {
     cursor: auto;
   }
 
-  .logo-img {
+  .logo-nav-img {
     max-width: 100%;
     max-height: 50px;
     margin: 30px 0 30px 50px;
@@ -249,8 +249,15 @@ footer {
   margin-top: auto;
 }
 
+.logo-img {
+  max-width: 100%;
+  max-height: 50px;
+  margin-top: 10px;
+}
+
 .footer-p {
   color: #ffffff;
+  margin-bottom: 30px;
 }
 
 * {
