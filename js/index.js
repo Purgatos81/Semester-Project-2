@@ -30,13 +30,13 @@ console.log(productsUrl);
                 // console.log(product.image);
                 if(username) {
                     container.innerHTML += `<a class="featured-product" href="edit.html?id=${product.id}">
-                                            <img class="featured-img" src="${imgBasicUrl + product.image_url}" alt="${product.image.alternativeText}">
+                                            <img class="featured-img" src="${imgBasicUrl + product.image_url}">
                                             <h4 class="featured-h4">${product.title}</h4>
                                             <p class="featured-p">$ ${product.price}</p>
                                             </a>`;
                 } else {            
                         container.innerHTML += `<a class="featured-product" href="details.html?id=${product.id}">
-                        <img class="featured-img" src="${imgBasicUrl + product.image_url}" alt="${product.image.alternativeText}">
+                        <img class="featured-img" src="${imgBasicUrl + product.image_url}">
                         <h4 class="featured-h4">${product.title}</h4>
                         <p class="featured-p">$ ${product.price}</p>
                         </a>`
@@ -51,3 +51,5 @@ console.log(productsUrl);
         displayMessage("error", error, ".featured-container");
     }
 })();
+
+// alt="${product.image.alternativeText}"
