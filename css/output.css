@@ -708,22 +708,12 @@ a {
     font-size: 1.2em;
   }
 }
-.admin-container {
-  display: flex;
-  border-radius: 5px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
 .admin-form-container {
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 30%;
-  min-width: 30%;
-  margin-left: 20%;
-  border-radius: 10px 0 0 10px;
+  box-shadow: 10px 10px 10px grey;
 }
 
 .admin-info-container {
@@ -731,20 +721,14 @@ a {
   flex-direction: column;
   justify-content: space-between;
   background-color: #3F3F3F;
-  max-width: 30%;
-  min-width: 30%;
-  margin-right: 20%;
-  padding: 85px 5% 0 5%;
-  border-radius: 0 10px 10px 0;
+  box-shadow: 10px 10px 10px grey;
 }
 
 .admin-title-container, .admin-price-container, .admin-image-container, .admin-description-container {
   display: flex;
   flex-direction: column;
   align-self: center;
-  min-width: 80%;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.2rem;
 }
 
 .admin-button-container {
@@ -781,7 +765,6 @@ a {
   font-family: "Ubuntu", sans-serif;
   color: #000000;
   align-self: center;
-  font-size: 2em;
 }
 
 .admin-title, .admin-price, .admin-image, .admin-description {
@@ -789,16 +772,12 @@ a {
   margin-bottom: 25px;
   border-radius: 5px;
   border: transparent;
-  padding: 20px 20px;
-  font-size: 1.2rem;
 }
 
 .admin-description-h3 {
   font-family: "Ubuntu", sans-serif;
   color: #ffffff;
   align-self: center;
-  line-height: 1.5em;
-  font-size: 1.5em;
 }
 
 .admin-product-link {
@@ -806,6 +785,123 @@ a {
   color: #BDBDBD;
 }
 
+@media only screen and (min-width: 991px) {
+  .admin-container {
+    display: flex;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .admin-form-container {
+    max-width: 30%;
+    min-width: 30%;
+    margin-left: 20%;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .admin-h2 {
+    font-size: 2em;
+  }
+
+  .admin-title, .admin-price, .admin-image, .admin-description {
+    padding: 20px 20px;
+    font-size: 1.2rem;
+  }
+
+  .admin-info-container {
+    max-width: 30%;
+    min-width: 30%;
+    margin-right: 20%;
+    padding: 85px 5% 0 5%;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .admin-description-h3 {
+    line-height: 1.5em;
+    font-size: 1.5em;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 990px) {
+  .admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .admin-form-container {
+    border-radius: 10px 10px 0 0;
+    max-width: 300px;
+    min-width: 300px;
+  }
+
+  .admin-h2 {
+    font-size: 2em;
+  }
+
+  .admin-title, .admin-price, .admin-image, .admin-description {
+    padding: 20px 20px;
+    font-size: 1.2rem;
+  }
+
+  .admin-info-container {
+    max-width: 300px;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .admin-description-h3 {
+    line-height: 1.3em;
+    font-size: 1.3em;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 349px) {
+  .admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .admin-form-container {
+    border-radius: 10px 10px 0 0;
+    max-width: 200px;
+    min-width: 0px;
+  }
+
+  .admin-h2 {
+    font-size: 1.7em;
+  }
+
+  .admin-title-container, .admin-price-container, .admin-image-container, .admin-description-container {
+    min-width: 180px;
+    font-size: 1.2rem;
+    margin: 5px;
+  }
+
+  .admin-title, .admin-price, .admin-image, .admin-description {
+    padding: 10px 10px;
+    font-size: 0.9rem;
+  }
+
+  .admin-info-container {
+    max-width: 200px;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .admin-description-h3 {
+    line-height: 1.2em;
+    font-size: 1.2em;
+  }
+}
 .edit-container {
   display: flex;
   flex-wrap: wrap;
