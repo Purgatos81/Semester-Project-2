@@ -519,44 +519,6 @@ a {
 
 /* temp code storage*/
 /*<i class="fas fa-trash-alt"></i>*/
-.login-container {
-  display: flex;
-  border-radius: 25px;
-  margin-top: 10%;
-}
-
-.login-form-container {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 30%;
-  min-width: 30%;
-  margin-left: 20%;
-  border-radius: 25px 0 0 25px;
-  box-shadow: 15px 10px 10px grey;
-}
-
-.username-form-container, .password-form-container {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  min-width: 80%;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.2rem;
-}
-
-.login-description-container {
-  display: flex;
-  background-color: #3F3F3F;
-  max-width: 30%;
-  min-width: 30%;
-  margin-right: 20%;
-  padding: 30px 5%;
-  border-radius: 0 25px 25px 0;
-  box-shadow: 10px 10px 10px grey;
-}
-
 .login-button-container {
   align-self: center;
 }
@@ -576,25 +538,176 @@ a {
   font-family: "Ubuntu", sans-serif;
   color: #000000;
   align-self: center;
-}
-
-#username, #password {
-  background-color: lightgrey;
-  margin-bottom: 25px;
-  border-radius: 5px;
-  border: transparent;
-  padding: 20px 20px;
-  font-size: 1.2rem;
+  font-size: 2em;
 }
 
 .login-description-h3 {
   font-family: "Ubuntu", sans-serif;
   color: #ffffff;
   align-self: center;
-  line-height: 1.7em;
-  font-size: 1.7em;
 }
 
+@media only screen and (min-width: 991px) {
+  .login-container {
+    display: flex;
+    border-radius: 25px;
+    margin-top: 10%;
+  }
+
+  .login-form-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 30%;
+    min-width: 30%;
+    margin-left: 20%;
+    border-radius: 25px 0 0 25px;
+    box-shadow: 15px 10px 10px grey;
+  }
+
+  .username-form-container, .password-form-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    min-width: 80%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+  }
+
+  #username, #password {
+    background-color: lightgrey;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: transparent;
+    padding: 20px 20px;
+    font-size: 1.2rem;
+  }
+
+  .login-description-container {
+    display: flex;
+    background-color: #3F3F3F;
+    max-width: 30%;
+    min-width: 30%;
+    margin-right: 20%;
+    padding: 30px 5%;
+    border-radius: 0 25px 25px 0;
+    box-shadow: 10px 10px 10px grey;
+  }
+
+  .login-description-h3 {
+    line-height: 1.7em;
+    font-size: 1.7em;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 990px) {
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    margin-top: 10%;
+  }
+
+  .login-form-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 30%;
+    min-width: 300px;
+    border-radius: 25px 25px 0 0;
+    box-shadow: 10px 10px 10px grey;
+  }
+
+  .username-form-container, .password-form-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    min-width: 80%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+  }
+
+  #username, #password {
+    background-color: lightgrey;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: transparent;
+    padding: 20px 20px;
+    font-size: 1.2rem;
+  }
+
+  .login-description-container {
+    display: flex;
+    background-color: #3F3F3F;
+    max-width: 30%;
+    min-width: 300px;
+    padding: 30px 5%;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 10px 10px 10px grey;
+    margin-bottom: 50px;
+  }
+
+  .login-description-h3 {
+    line-height: 1.7em;
+    font-size: 1.7em;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 349px) {
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    margin-top: 10%;
+  }
+
+  .login-form-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 30%;
+    min-width: 200px;
+    border-radius: 25px 25px 0 0;
+    box-shadow: 10px 10px 10px grey;
+  }
+
+  .username-form-container, .password-form-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    min-width: 180px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+  }
+
+  #username, #password {
+    background-color: lightgrey;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: transparent;
+    padding: 10px 10px;
+    font-size: 0.6rem;
+  }
+
+  .login-description-container {
+    display: flex;
+    background-color: #3F3F3F;
+    max-width: 30%;
+    min-width: 200px;
+    padding: 30px 5%;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 10px 10px 10px grey;
+    margin-bottom: 50px;
+  }
+
+  .login-description-h3 {
+    line-height: 1.2em;
+    font-size: 1.2em;
+  }
+}
 .admin-container {
   display: flex;
   border-radius: 5px;
