@@ -1,8 +1,6 @@
 @use 'variables';
 
 .edit-container {
-    display: flex;
-    flex-wrap: wrap;
     border-radius: 5px;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -13,10 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 30%;
-    min-width: 30%;
-    margin-left: 20%;
-    border-radius: 10px 0 0 10px;
+    box-shadow: 10px 10px 10px grey;
 }
 
 .edit-info-container {
@@ -24,20 +19,14 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: variables.$tertiary-color;
-    max-width: 30%;
-    min-width: 30%;
-    margin-right: 20%;
-    padding: 80px 5% 0 5%;
-    border-radius: 0 10px 10px 0;
+    box-shadow: 10px 10px 10px grey;
 }
 
 .edit-title-container, .edit-price-container, .edit-image-container, .edit-description-container {
     display: flex;
     flex-direction: column;
     align-self: center;
-    min-width: 80%;
     font-family: variables.$tertiary-font;
-    font-size: 1.2rem;
 }
 
 .edit-button-container {
@@ -67,7 +56,6 @@
 .toggle-p {
     font-family: variables.$seconday-font;
     color: variables.$text-color-light;
-    font-size: 20px;
 }
 
 .fa-toggle-on, .fa-toggle-off {
@@ -93,7 +81,6 @@
     font-family: variables.$primary-font;
     color: variables.$text-color-dark;
     align-self: center;
-    font-size: 2em;
 }
 
 .edit-title, .edit-price, .edit-image, .edit-description {
@@ -101,14 +88,157 @@
     margin-bottom: 25px;
     border-radius: 5px;
     border: transparent;
-    padding: 20px 20px;
-    font-size: 1.2rem;
 }
 
 .edit-description-h3 {
     font-family: variables.$primary-font;
     color: variables.$text-color-light;
     align-self: center;
-    line-height: 1.5em;
-    font-size: 1.5em;
+}
+
+@media only screen and (min-width:991px) {
+    .edit-container {
+        display: flex;
+    }
+
+    .edit-form-container {
+        max-width: 30%;
+        min-width: 30%;
+        margin-left: 20%;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .edit-h2 {
+        font-size: 2em;
+    }
+
+    .edit-title-container, .edit-price-container, .edit-image-container, .edit-description-container {
+        min-width: 80%;
+        font-size: 1.2rem;
+        margin: 5px;
+    }
+
+    .edit-info-container {
+        max-width: 30%;
+        min-width: 30%;
+        margin-right: 20%;
+        padding: 80px 5% 0 5%;
+        border-radius: 0 10px 10px 0;
+    }
+
+    
+    .edit-description-h3 {
+        line-height: 1.5em;
+        font-size: 1.5em;
+    }
+
+    .edit-title, .edit-price, .edit-image, .edit-description {
+        padding: 20px 20px;
+        font-size: 1.2rem;
+    }
+
+    .toggle-p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:350px) and (max-width:990px) {
+    .edit-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .edit-form-container {
+        border-radius: 10px 10px 0 0;
+        max-width: 300px;
+        min-width: 300px;
+    }
+
+    .edit-h2 {
+        font-size: 2em;
+    }
+
+    .edit-title-container, .edit-price-container, .edit-image-container, .edit-description-container {
+        font-size: 1.2rem;
+    }
+
+    .edit-info-container {
+        max-width: 300px;
+        min-width: 300px;
+        padding: 20px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .edit-title, .edit-price, .edit-image, .edit-description {
+        padding: 20px 20px;
+        font-size: 1.2rem;
+    }
+
+    .edit-description-h3 {
+        line-height: 1.3em;
+        font-size: 1.3em;
+    }
+
+    .toggle-p {
+        font-size: 18px;
+    }
+
+    .delete-button-container {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:349px) {
+    .edit-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .edit-form-container {
+        border-radius: 10px 10px 0 0;
+        max-width: 200px;
+        min-width: 200px;
+    }
+
+    .edit-h2 {
+        font-size: 1.7em;
+    }
+
+    .edit-title-container, .edit-price-container, .edit-image-container, .edit-description-container {
+        min-width: 180px;
+        font-size: 1.2rem;
+        margin: 5px;
+    }
+
+    .edit-info-container {
+        max-width: 200px;
+        min-width: 200px;
+        padding: 20px;
+        border-radius: 0 0 10px 10px;
+    }
+    
+    .edit-title, .edit-price, .edit-image, .edit-description {
+        padding: 10px 10px;
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+
+    .edit-button-container {
+        margin-top: 20px;
+    }
+
+    .edit-description-h3 {
+        line-height: 1.2em;
+        font-size: 1.2em;
+    }
+
+    .toggle-p {
+        font-size: 12px;
+    }
+
+    .delete-button-container {
+        margin-top: 20px;
+    }
 }
