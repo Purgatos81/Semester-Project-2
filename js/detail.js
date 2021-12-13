@@ -42,16 +42,17 @@ console.log(productUrl);
 
         const container = document.querySelector(".detail-container");
 
-        container.innerHTML = `<img class="details-img" src="${imgBasicUrl + details.image_url}" alt="${details.image.alternativeText}">
+        container.innerHTML = `
+                                    <img class="details-img" src="${imgBasicUrl + details.image_url}" alt="${details.image.alternativeText}">
                                 <div class="details-text-container">
-                                <h2 class="details-h2">${details.title}</h1>
-                                <p class="details-p">${details.description}</p>
-                                <div class="price-button-container">
-                                <p class="details-price-p">$ ${details.price}</p>
-                                <div class="cart-button-container">
-                                <i class="fas ${cssClass}" data-id="${details.id}" data-title="${details.title}" data-link="" data-price="${details.price}" data-image="${imgBasicUrl + details.image_url}"></i>
-                                </div>
-                                </div>
+                                    <h2 class="details-h2">${details.title}</h1>
+                                    <p class="details-p">${details.description}</p>
+                                    <div class="price-button-container">
+                                        <p class="details-price-p">$ ${details.price}</p>
+                                        <div class="cart-button-container">
+                                            <i class="fas ${cssClass}" data-id="${details.id}" data-title="${details.title}" data-link="" data-price="${details.price}" data-image="${imgBasicUrl + details.image_url}"></i>
+                                        </div>
+                                    </div>
                                 </div>`;
 
                                 const addButton = document.querySelectorAll(".cart-button-container i");
