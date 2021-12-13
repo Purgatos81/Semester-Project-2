@@ -804,6 +804,12 @@ a {
     font-size: 2em;
   }
 
+  .admin-title-container, .admin-price-container, .admin-image-container, .admin-description-container {
+    min-width: 180px;
+    font-size: 1.2rem;
+    margin: 5px;
+  }
+
   .admin-title, .admin-price, .admin-image, .admin-description {
     padding: 20px 20px;
     font-size: 1.2rem;
