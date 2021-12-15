@@ -26,6 +26,12 @@
     font-family: variables.$primary-font;
 }
 
+.cart-remove-button-container {
+    align-self: flex-end;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
 
 .cart-total-h4 {
     background-color: variables.$tertiary-color;
@@ -68,6 +74,10 @@
         border-radius: 25px 0 0 25px;
     }
     
+    .cart-item-title {
+        font-size: 1.1em;
+    }
+
     .cart-item-text-a {
         background-color: variables.$tertiary-color;
         min-width: 200px;
