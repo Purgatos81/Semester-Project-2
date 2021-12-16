@@ -1,7 +1,6 @@
 import { baseUrl } from "./settings/api.js";
 import { saveToken, saveUser } from "./utils/storage.js";
 import displayMessage from "./components/common/displayMessage.js";
-// import createLogin from "./components/common/createNav.js";
 import { createAdminLogin } from "./components/common/createNav.js";
 
 createAdminLogin();

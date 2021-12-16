@@ -8,7 +8,6 @@ const productsUrl = baseUrl + "products";
 const search = document.querySelector(".search");
 const username = getUsername();
 
-
 createLogin();
 
 console.log(productsUrl);
@@ -41,7 +40,6 @@ async function prodCall() {
                                         </a></div>`;
             }     
             search.onkeyup = function () {
-                // console.log(event);
             
                 const searchValue = event.target.value.trim().toLowerCase();
             
@@ -73,20 +71,14 @@ async function prodCall() {
                                                 <h4 class="product-h4" >${product.title}</h4>
                                                 <p class="product-p" >Price: ${product.price}</p>
                                                 </a></div>`;
-                    }    
-            
-            });
-            // console.log(json);
-            // prodCall();                
+                    }                
+            });               
         }});
-
     } catch (error) {
         console.log(error);
         displayMessage("error", error, ".products-container");
     }
-
 };
 
 prodCall();
 
-// alt="${product.image.alternativeText}"

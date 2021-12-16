@@ -16,10 +16,6 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-// if (!id) {
-//     document.location.href = "/";
-// }
-
 const productUrl = baseUrl + "products/" + id;
 
 const form = document.querySelector("form");

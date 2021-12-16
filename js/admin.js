@@ -1,4 +1,3 @@
-// import createLogin from "./components/common/createNav.js";
 import { createAdminLogin } from "./components/common/createNav.js";
 import displayMessage from "./components/common/displayMessage.js";
 import { baseUrl } from "./settings/api.js";

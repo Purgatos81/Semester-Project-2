@@ -26,8 +26,6 @@ console.log(productsUrl);
 
         json.forEach(function (product) {
             if (product.featured === true) {
-                // console.log(product);
-                // console.log(product.image);
                 if(username) {
                     container.innerHTML += `<a class="featured-product" href="edit.html?id=${product.id}">
                                             <img class="featured-img" src="${imgBasicUrl + product.image_url}">
@@ -51,5 +49,3 @@ console.log(productsUrl);
         displayMessage("error", error, ".featured-container");
     }
 })();
-
-// alt="${product.image.alternativeText}"
