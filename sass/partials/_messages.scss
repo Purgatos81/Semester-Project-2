@@ -3,25 +3,21 @@
 .message {
     width: 100%;
     padding: 0.9rem;
-    // border: 1px solid black;
     color: black;
     text-align: center;
 }
 
 .message.error {
-    // border-color: red;
     color: red;
     font-family: variables.$tertiary-font;
 }
 
 .message.warning {
-    // border-color: orange;
     color: red;
     font-family: variables.$tertiary-font;
 }
 
 .message.success {
-    // border-color: green;
     color: green;
     font-family: variables.$tertiary-font;
 }
