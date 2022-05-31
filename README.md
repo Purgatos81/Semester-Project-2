@@ -10,5 +10,37 @@ The admin can log in, uppdate, add and delete products. Users are also prevented
 unless they have logged in.
 
 ## Built with
-Basic HTML, CSS and Javascript.
-Styled with [Sass](https://sass-lang.com/).
+ - Basic HTML
+ -  CSS
+ -  Javascript
+ -  Styled with [Sass](https://sass-lang.com/).
+
+## Getting Started
+
+### Installing
+
+1. Clone the repo:
+
+```bash
+git clone git@github.com:Purgatos81/Semester-Project-2.git
+```
+
+2. Install the dependencies:
+
+```
+npm install
+```
+
+### Running
+
+```bash
+npm run develop
+```
+
+```bash
+sass --watch ./sass/main.scss  ./css/output.css
+```
+
+## Contact
+
+[My LinkedIn page]([www.linkedin.com](https://www.linkedin.com/in/john-h%C3%B8ykoll-christiansen-4583821b5/))
