@@ -5,4 +5,6 @@ My e-commerce semester project for my 2.year at Noroff
 ## Description
 A web page for ordering speakers online, and for the admin to add, uppdate and delete products. 
 The users can add and remove products from the shopping cart, 
-search for products and wiev detailed information about the speakers.
+search for products and view detailed information about the speakers.
+The admin can log in, uppdate, add and delete products. Users are also prevented from accessing the admin page
+unless they have logged in.
