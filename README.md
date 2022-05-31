@@ -8,3 +8,7 @@ The users can add and remove products from the shopping cart,
 search for products and view detailed information about the speakers.
 The admin can log in, uppdate, add and delete products. Users are also prevented from accessing the admin page
 unless they have logged in.
+
+## Built with
+Basic HTML, CSS and Javascript.
+Styled with [Sass](https://sass-lang.com/).
