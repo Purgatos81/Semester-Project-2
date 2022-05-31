@@ -1,6 +1,6 @@
 # Semester-Project-2
 
-![image]([https://imgur.com/rInIevv](https://i.imgur.com/rInIevv.jpg))
+![image](https://github.com/Purgatos81/Semester-Project-2/blob/main/media/DSIMG.jpg)
 
 My e-commerce semester project for my 2.year at Noroff
 
