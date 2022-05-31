@@ -1,6 +1,6 @@
 # Semester-Project-2
 
-![image](https://imgur.com/rInIevv)
+![image]([https://imgur.com/rInIevv](https://i.imgur.com/rInIevv.jpg))
 
 My e-commerce semester project for my 2.year at Noroff
 
