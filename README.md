@@ -43,4 +43,4 @@ sass --watch ./sass/main.scss  ./css/output.css
 
 ## Contact
 
-[My LinkedIn page]([www.linkedin.com](https://www.linkedin.com/in/john-h%C3%B8ykoll-christiansen-4583821b5/))
+[My LinkedIn page](https://www.linkedin.com/in/john-h%C3%B8ykoll-christiansen-4583821b5/)
