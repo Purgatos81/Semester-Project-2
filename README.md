@@ -2,7 +2,7 @@
 
 ![image](https://github.com/Purgatos81/Semester-Project-2/blob/main/media/DSIMG.jpg)
 
-My e-commerce semester project for my 2.year at Noroff
+My e-commerce semester project for my 2.year at Noroff.
 
 ## Description
 A web page for ordering speakers online, and for the admin to add, uppdate and delete products. 
