@@ -15,7 +15,8 @@ unless they have logged in.
  - Basic HTML
  -  CSS
  -  Javascript
- -  Styled with [Sass](https://sass-lang.com/).
+ -  Styled with [Sass](https://sass-lang.com/)
+ -  [Strapi](https://strapi.io/)
 
 ## Getting Started
 
